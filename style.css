@@ -28,7 +28,7 @@ h2 span {
 }
 textarea {
   height: 250px;
-  width: 500px;
+  width: 70vw;
   border: none;
   outline: none;
   resize: none;
@@ -64,8 +64,22 @@ button {
   cursor: pointer;
   text-shadow: 1px 1px 14px black;
   box-shadow: 1px 1px 5px #090000ab;
+  margin:20px;
 }
 button:active {
   scale: 0.98;
   background-color: #e50909;
 }
+@media all and (max-width: 400px) {
+  h2 {
+          font-size: 32px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .final{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+    }
