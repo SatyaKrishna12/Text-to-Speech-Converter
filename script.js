@@ -4,11 +4,10 @@ let voiceselect = document.querySelector("select");
 let selctoption = document.querySelector("option");
 window.speechSynthesis.onvoiceschanged = () => {
   voices = window.speechSynthesis.getVoices();
-  speech.voice = voices[4];
+  speech.voice = voices[0];
   voices.forEach(
     (voice, i) => (voiceselect.options[i] = new Option(voice.name, i))
   );
-  voiceselect.selectedIndex = 4;
 };
 voiceselect.addEventListener("change", () => {
   speech.voice = voices[voiceselect.value];
